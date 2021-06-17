@@ -1,0 +1,33 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+DEF target WoodenBox {
+  translation -0.0725296 0.1 0.0911055
+  size 0.1 0.1 0.1
+  mass 2
+}
+Viewpoint {
+  orientation 0.9999863304943503 -0.004592272778340982 -0.0024999710345109095 5.286127499636214
+  position -0.1467322229737505 1.200125072490869 0.9427642896297479
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.251059 -4.4409e-16 0.222497
+  floorSize 0.5 0.5
+}
+DEF supervisor Robot {
+  translation -0.168653 0.0699124 0.150445
+  children [
+    DEF receiver Receiver {
+    }
+    DEF emitter Emitter {
+    }
+  ]
+  name "supervisor"
+  controller "supervisor"
+  supervisor TRUE
+}
